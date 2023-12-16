@@ -10,11 +10,11 @@ State is maintained by the component itself. Component re-renders if State or Pr
 
 JSX - Syntax extension to JavaScript. Most React projects use JSX for its convenience. It makes defining components easier. 
 Ex: 
-function Greet (){
+`function Greet (){
 return ( <div>
 <h1>Hello World</h1>
 </div>)
-}
+}`
 
 Virtual DOM - A virtual light weight represntation of actual DOM. React update the state changes in Virtual DOM first and then it syncs with Real DOM.
 Runs diffing algorithm to compare the previous created component tree with the new one and does Reconciliation.
