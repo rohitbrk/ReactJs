@@ -1,3 +1,7 @@
+// useMemo takes a callback function and a dependency array as arguments.
+// returned element of the callback is memoized.
+// The memoization ensures the calculation is only performed again if one of the dependencies in the array changes.
+
 import { useMemo, useState } from "react";
 
 const initialItems = new Array(29_999_999).fill(0).map((_, i) => ({
