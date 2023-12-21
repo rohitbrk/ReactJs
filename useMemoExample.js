@@ -11,6 +11,7 @@ function Demo() {
   const [count, setCount] = useState(0);
   const [items] = useState(initialItems);
 
+  // this expensive computation only runs if the items array change. 
   const selectedItem = useMemo(
     () => items.find((item) => item.isSelected),
     [items],
