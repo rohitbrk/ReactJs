@@ -1,5 +1,8 @@
 import { useRef } from "react";
 
+// useRef can be used to reference elements.
+// Unlike state variables, changes to a useRef object's current property do not trigger re-renders
+
 function UseRefExample() {
   const inputRef = useRef(null);
 
