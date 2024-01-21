@@ -1,5 +1,6 @@
-import { useReducer } from 'react';
+import { useReducer } from "react";
 
+// reducer funtion specifies how the state gets updated
 function reducer(state, action) {
   switch (action.type) {
     case "INCREMENT":
@@ -12,6 +13,8 @@ function reducer(state, action) {
 }
 
 function Counter() {
+  // useReducer takes a reducer function and initial state as arguments
+  // and returns the state and a dispatch funtion 
   const [state, dispatch] = useReducer(reducer, { count: 0 });
 
   return (
