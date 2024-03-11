@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 function App() {
   const [presents, setPresents] = useState([
     {
